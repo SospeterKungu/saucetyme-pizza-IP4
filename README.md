@@ -5,10 +5,10 @@ Saucetyme Pizza
 Sospeter Kungu
 
 ### Description
-Saucetyme Pizza is a web application for an outlet that offers the best pizza in Nairobi. This application enables the outlet sell pizzas online to clients through online orders. The clients can be able to select their favorite pizza according to the topping e.g. vegetarian, chicken, beef or hawaiian (has pineapples and beef topping). They can also select the crust or base of the pizza whether crispy, Stuffed or Gluten-free. Finally, they will be able to select the size of the pizza, whether small, medium or large. The three components, i.e topping, crust and size will give the final cost of the pizza. They can also add the number of pizzas they need to order as well as whether they would like a delivery of their order which will ultimately give the final amount to be paid in a check-out cart which displays the order summary with all items ordered and the total amount to be paid.
+Saucetyme Pizza is a web application for an outlet that offers the best pizza in Nairobi. This application enables the outlet sell pizzas online to clients through online orders. The clients can be able to select their favorite pizza according to the topping e.g. vegetarian, chicken-periperi, hungarian-beef or hawaiian (has pineapples and beef topping). They can also select the crust or base of the pizza whether crispy, Stuffed or Gluten-free. Finally, they will be able to select the size of the pizza, whether small, medium or large. The three components, i.e topping, crust and size will give the final cost of the pizza. They can also add the number of pizzas they need to order as well as whether they would like a delivery of their order which will ultimately give the final amount to be paid in a check-out cart which displays the order summary with all items ordered and the total amount to be paid.
 
 ### Technologies used and installation set-up
-The program has been made using Atom for coding, Git for tracking commits, Github for remote storage and any web-browser can be used for access by the clients who want to use it, but the author recommends Google Chrome. 
+The program has been made using Atom for coding, Git for tracking commits, Github for remote storage and any web-browser can be used for access by the clients who want to use it, but the author recommends Google Chrome.
 
 ### Link to live Github pages
 

@@ -1,0 +1,11 @@
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  background-color: black;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.orderSection {
+  background-color: white;
+  text-align: center;
+}

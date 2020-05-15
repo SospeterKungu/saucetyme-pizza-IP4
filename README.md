@@ -11,6 +11,7 @@ Saucetyme Pizza is a web application for an outlet that offers the best pizza in
 The program has been made using Atom for coding, Git for tracking commits, Github for remote storage and any web-browser can be used for access by the clients who want to use it, but the author recommends Google Chrome.
 
 ### Link to live Github pages
+https://sospeterkungu.github.io/saucetyme-pizza-IP4/
 
 ### License and Copyright Infomation
 The author has given permission to anyone who would like to use this app absolute right. However, update should have written authority from sospeter inc 2020 (c).

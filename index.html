@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Saucetyme Pizza</title>
   </head>
   <body>
@@ -78,38 +78,48 @@
             <h5>place your order here</h5>
           <div class="orderProcess">
             <p>Select the size of pizza you would like to order</p>
-            <div class="radio">
+            <form id="orderForm">
+              <div class="radio">
               <label><input type="radio" name="size" value="small" checked>small Size</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="size" value="medium">Medium Size</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="size" value="large">Large Size</label>
-            </div>
-            <p>Select the topping you would like to have on your pizza</p>
-            <div class="radio">
-              <label><input type="radio" name="topping" value="vegetarian" checked>Vegetarian</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="topping" value="chicken-periperi">Chiken Peri Peri</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="topping" value="hungarian-beef">hungarian Beef</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="topping" value="hawaiian">Hawaiian</label>
-            </div>
-            <p>Select the crust or base you would like to have on your pizza</p>
-            <div class="radio">
-              <label><input type="radio" name="crust" value="crispy" checked>Crispy</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="crust" value="stuffed">Stuffed</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="crust" value="gluten-free">Gluten Free</label>
-            </div>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="medium">Medium Size</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="large">Large Size</label>
+              </div>
+              <p>Select the topping you would like to have on your pizza</p>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="vegetarian" checked>Vegetarian</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="chicken">Chiken Peri Peri</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="hungarian">hungarian Beef</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="hawaiian">Hawaiian</label>
+              </div>
+              <p>Select the crust or base you would like to have on your pizza</p>
+              <div class="radio">
+                <label><input type="radio" name="crust" value="crispy" checked>Crispy</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="crust" value="stuffed">Stuffed</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="crust" value="gluten">Gluten Free</label>
+              </div>
+            </form>
+          </div>
+          <div class="">
+            <table>
+              <tr>
+                <td>ORDER TOTAL<td>
+                <td><span id="orderPrice"> </span></td>
+              </tr>
+            </table>
           </div>
         </div>
       </section>

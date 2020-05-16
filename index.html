@@ -75,12 +75,15 @@
           </div>
             <br>
           <div class="col-md-7 left-side-container">
-            <h5>place your order here</h5>
+            <p>Non-meat lovers are never left behind on our offers. This vegan pizza comes with spicy herb including Oregano,
+              bayleaf, cumming seeds, tomatoes, onions, paprika all made together with the chef's
+              delight. It is a great combination especially when spicy!</p>
+            <h5>PLACE YOUR ORDER HERE</h5>
           <div class="orderProcess">
-            <p>Select the size of pizza you would like to order</p>
+            <p class="pizzaDetails">Select the size of pizza you would like to order:</p>
             <form id="orderForm">
               <div class="radio">
-              <label><input type="radio" name="size" value="small" checked>small Size</label>
+              <label><input type="radio" name="size" value="small" checked>Small Size</label>
               </div>
               <div class="radio">
                 <label><input type="radio" name="size" value="medium">Medium Size</label>
@@ -88,7 +91,8 @@
               <div class="radio">
                 <label><input type="radio" name="size" value="large">Large Size</label>
               </div>
-              <p>Select the topping you would like to have on your pizza</p>
+              <p>(Small Ksh 200, Medium Ksh 300 and Large Ksh 400)</p>
+              <p class="pizzaDetails">Select the topping you would like to have on your pizza:</p>
               <div class="radio">
                 <label><input type="radio" name="topping" value="vegetarian" checked>Vegetarian</label>
               </div>
@@ -101,7 +105,9 @@
               <div class="radio">
                 <label><input type="radio" name="topping" value="hawaiian">Hawaiian</label>
               </div>
-              <p>Select the crust or base you would like to have on your pizza</p>
+              <br>
+              <p>(Vegetarian Ksh 150, Chicken Ksh 350, Hungarian Ksh 250, Hawaiian Ksh 450)</p>
+              <p class="pizzaDetails">Select the crust or base you would like on your pizza:</p>
               <div class="radio">
                 <label><input type="radio" name="crust" value="crispy" checked>Crispy</label>
               </div>
@@ -111,6 +117,19 @@
               <div class="radio">
                 <label><input type="radio" name="crust" value="gluten">Gluten Free</label>
               </div>
+              <p>(Crispy Ksh 120, Stuffed Ksh 220 and Gluten-Free Ksh 320)</p>
+              <div class="button">
+                <span class="btn btn-info" id="addPizza">Add another Pizza</span>
+              </div>
+              <br>
+              <p class="pizzaDetails">Would you like your pizza delivered?</p>
+              <div class="radio">
+                <label><input type="radio" name="deliveryConfirmation" value="no">NO</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="deliveryConfirmation" value="yes">YES</label>
+              </div>
+              <br>
             </form>
           </div>
           <div class="">
@@ -121,6 +140,7 @@
               </tr>
             </table>
           </div>
+          <button type="submit" class="btn btn-success">SUBMIT YOUR ORDER</button>
         </div>
       </section>
       <section class="container contactsSection">

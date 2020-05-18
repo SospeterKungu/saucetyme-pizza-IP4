@@ -1,3 +1,4 @@
+//user interface logic
 $(document).ready(function(){
     $("#dotext1").hide();
     $("#dotext2").hide();
@@ -13,7 +14,7 @@ $(document).ready(function(){
      });
      $(".imagetoggle4 , .imagetoggle5").click(function(){
      $("#dotext3").toggle();
-     $(".imagetoggle4").toggle();
+     $(".imagetoggle4").toggle();e
      });
      $(".imagetoggle6 , .imagetoggle7").click(function(){
      $("#dotext4").toggle();
@@ -36,6 +37,7 @@ $(document).ready(function(){
         calculatePrice (pizzaOrdered);
    });
 
+//business logic
 function calculatePrice(pizzaOrdered) {
     $("#orderPrice").text(pizzaOrdered.price());
 };

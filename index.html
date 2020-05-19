@@ -75,9 +75,9 @@
           </div>
             <br>
           <div class="col-md-7 left-side-container">
-            <p>Offering the best pizza in town, we give you a chance to dine at our restaurant where our garden offers unrivalled atmosphere,
+            <p4>Offering the best pizza in town, we give you a chance to dine at our restaurant where our garden offers unrivalled atmosphere,
               we hereby offer you a chance to order online, to minimize your time on que as well as a chance to have your pizza delivered
-              within Nairobi CBD at your convenience.</p>
+              within Nairobi CBD at your convenience.</p4>
               <br>
             <h5>PLACE YOUR ORDER HERE</h5>
           <div class="orderProcess">
@@ -120,23 +120,33 @@
               </div>
               <p>(Crispy Ksh 120, Stuffed Ksh 220 and Gluten-Free Ksh 320)</p>
               <div class="button">
-                <span class="btn btn-info" id="addPizza">Add another Pizza</span>
+                <a class="btn btn-info" id="addPizza">Add another Pizza</a>
               </div>
               <br>
-              <p class="pizzaDetails">Would you like your order to be delivered?</p>
+              <p class="pizzaDetails">Would you like your Pizza delivered? if yes, fill in your location</p>
               <div class="radio">
-                <label><input type="radio" name="deliveryConfirmation" value="no">NO</label>
+                <label><input type="radio" name="delivery" value="no">NO</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="deliveryConfirmation" value="yes">YES</label>
+                <label><input type="radio" name="delivery" value="yes">YES</label>
               </div>
+              <div class="delivery">
+                <textarea class="deliveryArea" style="" placeholder="Enter your location here..."></textarea>
+              </div>
+
               <br>
             </form>
           </div>
           <div class="">
-            <table>
+            <table clas="table">
               <tr>
-                <td class="pizzaDetails">ORDER TOTAL Ksh<td>
+                <td>Description</td>
+                <td>Quantity</td>
+                <td>TOTAL Ksh<td>
+              </tr>
+              <tr>
+                <td class="pizzaDetail">ORDER TOTAL Ksh<td>
+                <td><span id="pizzaQty"> </span><td>
                 <td class="pizzaDetails"><span id="orderPrice"> </span></td>
               </tr>
             </table>

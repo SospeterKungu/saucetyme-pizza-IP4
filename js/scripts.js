@@ -1,3 +1,7 @@
+
+var pizzaOrderedList = [];
+var totalPrice=0.0;
+
 //user interface logic
 $(document).ready(function(){
     $("#dotext1").hide();
@@ -24,25 +28,54 @@ $(document).ready(function(){
      var selectedSize = "small";
      var selectedTopping = "vegetarian";
      var selectedCrust = "crispy";
+     var selectedDelivery = "NO";
      var pizzaOrdered = {};
-     pizzaOrdered = new Pizza(selectedSize, selectedTopping, selectedCrust);
+    pizzaOrdered = new Pizza(selectedSize, selectedTopping, selectedCrust);
+    addPizza(pizzaOrdered);
+    calculatePrice (pizzaOrdered);
+
 
      $('#orderForm input').on('change', function() {
        selectedSize = $('input[name=size]:checked', '#orderForm').val();
        selectedTopping =  $('input[name=topping]:checked', '#orderForm').val();
        selectedCrust = $('input[name=crust]:checked', '#orderForm').val();
+       selectedDelivery = $('input[name=deliveryConfirmation]:checked', '#orderForm').val();
+
+
+       console.log("Before change >>"+ pizzaOrderedList.length);
+       totalPrice=totalPrice-pizzaOrderedList[pizzaOrderedList.length - 1].price();
+       pizzaOrderedList.pop()
+       console.log("After change >>"+ pizzaOrderedList.length);
        pizzaOrdered = new Pizza(selectedSize, selectedTopping, selectedCrust);
-       calculatePrice (pizzaOrdered);
+       addPizza(pizzaOrdered);
+       calculatePrice (pizzaOrdered,selectedDelivery);
       });
-        calculatePrice (pizzaOrdered);
+
+      $("#addPizza").click(function(){
+          //Clear form
+          addPizza(pizzaOrdered);
+          calculatePrice(pizzaOrdered);
+        });
    });
 
 //business logic
-function calculatePrice(pizzaOrdered) {
-    $("#orderPrice").text(pizzaOrdered.price());
+function addPizza(pizzaOrdered){
+  pizzaOrderedList.push(pizzaOrdered);
+}
+function calculatePrice(pizzaOrdered,selectedDelivery){
+  console.log("Total Price >>" +totalPrice);
+    totalPrice= totalPrice + pizzaOrdered.price();
+    if(selectedDelivery=="yes"){
+      totalPrice=totalPrice+200;
+
+    } else if(selectedDelivery=="no"){
+      totalPrice=totalPrice-200;
+    }
+    $("#orderPrice").text(totalPrice);
+    $("#pizzaQty").text(pizzaOrderedList.length);
 };
 
-function Pizza(size, topping, crust) {
+function Pizza(size, topping, crust){
   this.size=size;
   this.topping=topping;
   this.crust=crust;

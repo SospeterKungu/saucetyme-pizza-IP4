@@ -87,3 +87,12 @@ p {
 .contactsSection {
   text-align: center;
 }
+
+.deliveryArea{
+  width: 400px;
+}
+
+h7{
+  font-weight: bold;
+  font-size: 30px;
+}

@@ -97,3 +97,9 @@ Pizza.prototype.price = function (){
   var price = sizePrices[sizeIndex] + toppingPrices[toppingIndex] + crustPrices[crustIndex];
   return price;
 }
+
+$(document).ready(function() {
+    $("#add").submit(function() {
+      alert("Order submitted as follows " + pizzaOrderedList + "Pizza(s)," + "amount payable is " + totalPrice + "to be delivered at " + deliveryArea);
+    });
+});
